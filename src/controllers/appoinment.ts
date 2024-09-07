@@ -1,9 +1,9 @@
 import { Request, Response } from "express";
-import { getAllUsers } from "@/services/appoinment/getAllAppoinments";
-import { getById } from "@/services/appoinment/getAppoinmentById";
-import { CreateAppoinment } from "@/services/appoinment/createAppoinment";
-import { CancelledAppoinment } from "@/services/appoinment/cancelledAppoiment";
-import { getByUser } from "@/services/appoinment/getAppoinmentByUser";
+import { getAllUsers } from "../services/appoinment/getAllAppoinments";
+import { getById } from "../services/appoinment/getAppoinmentById";
+import { CreateAppoinment } from "../services/appoinment/createAppoinment";
+import { CancelledAppoinment } from "../services/appoinment/cancelledAppoiment";
+import { getByUser } from "../services/appoinment/getAppoinmentByUser";
 
 export const getAll = async (req: Request, res: Response) => {
   getAllUsers()
