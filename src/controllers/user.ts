@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
 
-import { getAllUsers } from "../services/user/getAllUsers";
-import { getById } from "@/services/user/getUserById";
-import { RegisterUser } from "../services/user/registerUser";
-import { LogInService } from "../services/user/credentials/logInService";
-import { verifyUserByToken } from "../services/user/verifyUser";
+import { getAllUsers } from "../services/User/getAllUsers";
+import { getById } from "../services/User/getUserById";
+import { RegisterUser } from "../services/User/registerUser";
+import { LogInService } from "../services/User/credentials/logInService";
+import { verifyUserByToken } from "../services/User/verifyUser";
 
 export const getAll = async (req: Request, res: Response) => {
   const data = await getAllUsers();
