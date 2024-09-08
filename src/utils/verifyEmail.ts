@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
 });
 
 export default async (email: string, token: string) => {
-  const url = `http://localhost:${PORT}/users/confirm/${token}`;
+  const url = `https://appoinments-system-backend.vercel.app/users/confirm/${token}`;
 
   await transporter.sendMail({
     from: "Sauron eje <alesauro30@gmail.com>",
