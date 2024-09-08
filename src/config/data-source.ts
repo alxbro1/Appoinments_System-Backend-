@@ -7,7 +7,7 @@ import { POSTGRES_URL } from './envs'
 export const AppDataSource = new DataSource({
   type: "postgres",
   url: POSTGRES_URL,
-  dropSchema: true,
+  dropSchema: false,
   synchronize: true,
   logging: false,
   entities: [User, Credential, Appoinment],
